@@ -23,18 +23,18 @@ const assertArraysEqual = function(arr1, arr2) {
 const middle = function(array) {
   if (array.length <= 2) return [];
 
-  let result = [];
   //get array length.
-  let length = array.length;
+  let middleIndex = Math.floor(array.length/2);
 
   //iterate through array
-  if (length % 2 === 0) {
-    result.push(array[length / 2 - 1]);
-    result.push(array[length / 2]);
+  if (array.length % 2 === 0) {
+    const middleLeft = array[middleIndex - 1];
+    const middleRight = array[middleIndex];
+    return [middleLeft, middleRight];
   } else {
-    result.push(array[Math.floor(length / 2)]);
+    const middleElement = array[middleIndex];
+    return [middleElement];
   }
-  return result;
 };
 
 assertArraysEqual(middle([1]), []);
