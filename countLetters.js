@@ -28,5 +28,6 @@ const countLetters = function(string) {
   return result;
 };
 
+module.exports = countLetters;
 console.log(countLetters(' Lighthouse Labs is great! '));
 console.log(countLetters('XyLoPhoneee '))

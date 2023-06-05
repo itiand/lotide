@@ -16,6 +16,7 @@ const findKey = function(object, callback) {
   }
 }
 
+module.exports = findKey;
 
 //TESTING//
 const result1 = findKey({

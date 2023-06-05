@@ -28,8 +28,10 @@ const without = function(source, itemsToRemove) {
       output.push(source[i]);
     }
   }
-  console.log(output);
+  return output;
 }
+
+module.exports = without;
 
 ///TESTS////
 const words = ["hello", "world", "lighthouse"];
